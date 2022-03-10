@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Parisienne&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background: #06BDC1;
+    background: -webkit-radial-gradient(center, #67C9E5, #8E169A);
+    background: -moz-radial-gradient(center, #67C9E5, #8E169A);
+    background: radial-gradient(ellipse at center, #67C9E5, #8E169A);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quotes-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 900px;
+    text-align: center;
+    min-height: 400px;
+    padding: 0 25px;
+    color: gray;
+    border-radius: 10px;
+    background-color: #F4EDEA;
+    border: 10px solid #9c5a8b;
+    box-shadow: 0px 2px 6px 0px rgb(0 0 0 / 90%);
+}
+
+.quote{
+    color: #000;
+}
+
+#quotes-word{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#quotes-author{
+    font-family: 'Parisienne', cursive;
+    font-size: 2rem;
+}
+
+.quotes-btn{
+    margin-top: 25px;
+    color: #fff;
+    background: #6d1e4e;
+}
+
+.quotes-btn:hover{
+    color: #fff;
+    background: #6d1e4e;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .quotes-section{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .quotes-word{
+        font-size: 1.3rem;
+    }
+    .quotes-author {
+        font-size: 1.6rem;
+    }
+}
